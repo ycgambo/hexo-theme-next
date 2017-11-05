@@ -642,7 +642,7 @@ motion:
     # slideUpBigIn | slideUpBigOut | slideDownBigIn | slideDownBigOut | slideLeftBigIn | slideLeftBigOut | slideRightBigIn | slideRightBigOut
     # perspectiveUpIn | perspectiveUpOut | perspectiveDownIn | perspectiveDownOut | perspectiveLeftIn | perspectiveLeftOut | perspectiveRightIn | perspectiveRightOut
     #post_block: slideDownIn
-    post_header: flipBounceYIn
+    #post_header: flipYIn
     #post_body: slideDownIn
     coll_header: slideLeftIn
     # Only for Pisces | Gemini.
