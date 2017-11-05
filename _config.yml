@@ -570,13 +570,13 @@ calendar:
 
 # Algolia Search
 algolia_search:
-  enable: false
+  enable: true
   hits:
     per_page: 10
   labels:
-    input_placeholder: Search for Posts
-    hits_empty: "We didn't find any results for the search: ${query}"
-    hits_stats: "${hits} results found in ${time} ms"
+    input_placeholder: 站内搜索
+    hits_empty: "未找到以下内容: ${query}"
+    hits_stats: "找到${hits} 条结果，耗时${time} ms"
 
 # Local search
 # Dependencies: https://github.com/flashlab/hexo-generator-search
