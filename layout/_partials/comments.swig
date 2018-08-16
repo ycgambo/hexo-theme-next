@@ -62,6 +62,16 @@
       {% endif %}
     </div>
 
+  {% elseif theme.gitalk.enable %}
+    <div class="comments" id="comments">
+      {% if theme.gitalk.lazy %}
+        <div onclick="showGitalk()" id="gitalk-display-button">{{ __('gitalkbutton') }}</div>
+        <div id="gitalk-container" style="display:none"></div>
+      {% else %}
+        <div id="gitalk-container"></div>
+      {% endif %}
+    </div>
+
   {% elseif theme.valine.appid and theme.valine.appkey %}
     <div class="comments" id="comments">
     </div>

@@ -2,6 +2,7 @@
 .idea/
 *.log
 *.iml
+*.yml
 yarn.lock
 package-lock.json
 node_modules/
