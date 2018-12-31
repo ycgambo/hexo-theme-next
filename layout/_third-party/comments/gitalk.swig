@@ -19,7 +19,7 @@
             repo: '{{ theme.gitalk.github_repo }}',
             owner: '{{ theme.gitalk.github_user }}',
             admin: ['{{ theme.gitalk.github_user }}'],
-            id: '{{ page.title }}',
+            id: '{{ page.path }}',
             distractionFreeMode: false
             });
         gitalk.render('gitalk-container');
