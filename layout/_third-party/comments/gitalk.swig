@@ -13,13 +13,15 @@
     {% if page.comments %}
       <script type="text/javascript">
       function renderGitalk(){
+        var t = '{{ page.title }}';
         var gitalk = new Gitalk({
             clientID: '{{ theme.gitalk.client_id }}',
             clientSecret: '{{ theme.gitalk.client_secret }}',
             repo: '{{ theme.gitalk.github_repo }}',
             owner: '{{ theme.gitalk.github_user }}',
             admin: ['{{ theme.gitalk.github_user }}'],
-            id: '{{ page.path }}',
+            id: t.length > 45 ? (t.substring(0, 45) + '...') : t,
+            labels: ['Gitalk'],
             distractionFreeMode: false
             });
         gitalk.render('gitalk-container');
