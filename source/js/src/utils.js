@@ -2,6 +2,22 @@
 
 NexT.utils = NexT.$u = {
   /**
+   * 文章列表预览部分点击TOC跳到文章内锚点
+   */
+  articlePreviewTocJumpix: function () {
+    $('#posts > article > div').each(function() {
+      var $article = $(this);
+      var href = $article.find('.post-header .post-title-link').attr('href')
+      $article.find('.post-body > ul a').each(function() {
+        $arch = $(this);
+        if ($arch.attr('href').startsWith('#')) {
+          $arch.attr('href', (href + $(this).attr('href')))
+        }
+      })
+    })
+  },
+
+  /**
    * Wrap images with fancybox support.
    */
   wrapImageWithFancyBox: function () {

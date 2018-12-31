@@ -1,6 +1,7 @@
 /* global NexT: true */
 
 $(document).ready(function () {
+  NexT.utils.articlePreviewTocJumpix();
 
   $(document).trigger('bootstrap:before');
 
