@@ -13,7 +13,7 @@
     {% if page.comments %}
       <script type="text/javascript">
       function renderGitalk(){
-        var t = '{{ page.title }}';
+        var t = '{{ page.title }}'.replace(/,/, "，");
         var gitalk = new Gitalk({
             clientID: '{{ theme.gitalk.client_id }}',
             clientSecret: '{{ theme.gitalk.client_secret }}',
