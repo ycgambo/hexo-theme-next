@@ -7,7 +7,7 @@ NexT.utils = NexT.$u = {
   articlePreviewTocJumpix: function () {
     $('#posts > article > div').each(function() {
       var $article = $(this);
-      var href = $article.find('.post-header .post-title-link').attr('href')
+      var href = $article.find('.post-header .post-title-link').attr('href') || window.location.href
       $article.find('.post-body > ul a').each(function() {
         $arch = $(this);
         if ($arch.attr('href').startsWith('#')) {
