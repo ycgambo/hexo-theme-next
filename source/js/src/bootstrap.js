@@ -26,6 +26,18 @@ $(document).ready(function () {
     });
   });
 
+  $('.music-player').click(function() {
+      if ($(this).hasClass("spining")) {
+          $(".music-player audio")[0].pause();
+          $(this).css('animation-play-state','paused')
+      } else {
+          $(".music-player audio")[0].play();
+          $(this).css('animation-play-state','')
+          $(this).addClass("fa-spin")
+      }
+    $(this).toggleClass("spining")
+  })
+
   /**
    * Register JS handlers by condition option.
    * Need to add config option in Front-End at 'layout/_partials/head.swig' file.

@@ -44,7 +44,26 @@
     max-width: 442px;
 }
 
-.back-to-top {
+.music-player {
+    right: 0px;
+    bottom: 0px;
+    display: inline-block;
+    box-sizing: border-box;
+    position: absolute;
+    z-index: 1050;
+    padding: 0 6px;
+    margin: 10px;
+    background: #222;
+    color: #fff;
+    cursor: pointer;
+    text-align: center;
+    -webkit-transform: translateZ(0);
+    transition-property: bottom;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
+}
+.back-to-top, .music-player {
   width: 40px;
   height: 40px;
   font-size: 20px;
@@ -54,7 +73,7 @@
   -ms-transition:all .5s;
   opacity: 0.5
 }
-.back-to-top:hover {
+.back-to-top:hover , .music-player:hover{
   opacity: 0.9;
 }
 
