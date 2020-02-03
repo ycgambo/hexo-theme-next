@@ -27,7 +27,7 @@ override: false
 # #ms_browserconfig: /images/browserconfig.xml
 
 # Set default keywords (Use a comma to separate)
-keywords: "Hexo, NexT"
+keywords: "ycgambo, blog"
 
 # Set rss to false to disable feed link.
 # Leave rss as empty to use site's feed link.
@@ -67,7 +67,7 @@ footer:
 canonical: true
 
 # Change headers hierarchy on site-subtitle (will be main site description) and on all post/pages titles for better SEO-optimization.
-seo: false
+seo: true
 
 # If true, will add site-subtitle to index page, added in main hexo config.
 # subtitle: Subtitle
@@ -339,7 +339,7 @@ mathjax:
   cdn: //cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML
 
 # Han Support docs: https://hanzi.pro/
-han: false
+han: true
 
 # Swiftype Search API Key
 #swiftype_key:
@@ -371,8 +371,8 @@ changyan:
 # more info please open https://github.com/xCss/Valine
 valine:
   enable: false
-  appid:  # your leancloud application appid
-  appkey:  # your leancloud application appkey
+  appid:  LeVWAMGnpOJAFuRo2iQwXWr2-gzGzoHsz
+  appkey: 70HrkvNzax4IuR7AtnUNIAev
   notify: false # mail notifier , https://github.com/xCss/Valine/wiki
   verify: false # Verification code
   placeholder: Comment input placeholder
@@ -409,8 +409,8 @@ gitalk:
   cleanly: false # Hide 'Powered by ...' on footer, and more
   github_user: ycgambo # MUST HAVE, Your Github ID
   github_repo: boke-comments # MUST HAVE, The repo you use to store Gitment comments
-  client_id: 1ce5d6eda67b0a78bea8 # MUST HAVE, Github client id for the Gitment
-  client_secret: 1b9ecd4be092e06aeba5c9907859831aced94d6e
+  client_id: 1504aa48c81f46a83123 # MUST HAVE, Github client id for the Gitment
+  client_secret: a299949ab6664dea3d034393d4e271f63783db14
 
 # Baidu Share
 # Available value:
@@ -716,28 +716,28 @@ vendors:
   _internal: lib
 
   # Internal version: 2.1.3
-  jquery:
+  jquery: https://cdn.jsdelivr.net/npm/jquery@2.1.3/dist/jquery.min.js
 
   # Internal version: 2.1.5
   # See: http://fancyapps.com/fancybox/
-  fancybox:
-  fancybox_css:
+  fancybox: https://cdn.jsdelivr.net/npm/jquery.fancybox@2.1.5/source/jquery.fancybox.min.js
+  fancybox_css: https://cdn.jsdelivr.net/npm/jquery.fancybox@2.1.5/source/jquery.fancybox.min.css
 
   # Internal version: 1.0.6
   # See: https://github.com/ftlabs/fastclick
-  fastclick:
+  fastclick: https://cdn.jsdelivr.net/npm/fastclick@1.0.6/lib/fastclick.min.js
 
   # Internal version: 1.9.7
   # See: https://github.com/tuupola/jquery_lazyload
-  lazyload:
+  lazyload: https://cdn.jsdelivr.net/npm/jquery-lazyload@1.9.3/jquery.lazyload.min.js
 
   # Internal version: 1.2.1
   # See: http://VelocityJS.org
-  velocity:
+  velocity: https://cdn.jsdelivr.net/npm/velocity-animate@1.2.1/velocity.min.js
 
   # Internal version: 1.2.1
   # See: http://VelocityJS.org
-  velocity_ui:
+  velocity_ui: https://cdn.jsdelivr.net/npm/velocity-animate@1.2.1/velocity.ui.min.js
 
   # Internal version: 0.7.9
   # See: https://faisalman.github.io/ua-parser-js/
@@ -745,12 +745,12 @@ vendors:
 
   # Internal version: 4.6.2
   # See: http://fontawesome.io/
-  fontawesome:
+  fontawesome: https://cdn.jsdelivr.net/npm/font-awesome@4.6.3/css/font-awesome.min.css
 
   # Internal version: 1
   # https://www.algolia.com
-  algolia_instant_js:
-  algolia_instant_css:
+  algolia_instant_js: https://cdn.jsdelivr.net/npm/instantsearch.js@1.11.7/dist/instantsearch.min.js
+  algolia_instant_css: https://cdn.jsdelivr.net/npm/instantsearch.js@1.11.7/dist/instantsearch.min.css
 
   # Internal version: 1.0.2
   # See: https://github.com/HubSpot/pace
@@ -785,7 +785,7 @@ vendors:
 
   # Internal version: 3.3.0
   # https://github.com/ethantw/Han
-  han:
+  Han: https://cdn.jsdelivr.net/npm/han-css@3.3.0/dist/han.min.css
 
   # needMoreShare2
   # https://github.com/revir/need-more-share2
